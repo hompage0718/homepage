@@ -1,17 +1,6 @@
 import React, { Fragment } from "react";
 
-import {
-  Typography,
-  AppBar,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
-  Container,
-} from "@material-ui/core";
+import { CssBaseline } from "@material-ui/core";
 
 import Navbar from "./Navbar";
 import Body from "./Body";
