@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import {
   Typography,
   AppBar,
@@ -12,24 +14,17 @@ import {
   Container,
 } from "@material-ui/core";
 
-import Navbar from "./components/views/Navbar";
-import Body from "./components/views/Body";
-import Footer from "./components/views/Footer";
+import Home from "./components/views/Home";
 
 const App = () => {
   return (
-    <>
-      <CssBaseline />
-      <Navbar />
-      <main>
-        <div>
-          <Body />
-        </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+    <Router>
+      <Fragment>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Fragment>
+    </Router>
   );
 };
 

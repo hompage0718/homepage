@@ -83,6 +83,11 @@ const Footer = (props) => {
                     <Button>Our Location</Button>
                   </ButtonGroup>
                 </Grid>
+                <Grid item>
+                  <Typography gutterBottom variant="subscript">
+                    License No.: EC-5565-2017
+                  </Typography>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
